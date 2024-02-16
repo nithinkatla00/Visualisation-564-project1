@@ -4,7 +4,6 @@ import { Box } from '@mui/material';
 
 const ScatterPlot = ({ data, width, height, xAxisName, yAxisName, theme }) => {
     const svgRef = useRef();
-    console.log(data)
 
     useEffect(() => {
         let formattedData = data.map(([x, y]) => ({ x, y }));

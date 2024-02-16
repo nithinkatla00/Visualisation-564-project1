@@ -122,10 +122,6 @@ const Home = () => {
         : (selectedData[0]?.column_name === 'key') ? countKeys 
         : (selectedData[0]?.column_name === 'mode') ? countMode 
         : {}
-    const data2 = selectedDoubleData[0]?.column_name === 'artist(s)_name' ? authorCounts 
-        : (selectedDoubleData[0]?.column_name === 'key') ? countKeys 
-        : (selectedDoubleData[0]?.column_name === 'mode') ? countMode 
-        : {}
 
     const handleToggleChange = () => {
         setIsSideWays(!isSideways);
